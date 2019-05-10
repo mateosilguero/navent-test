@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Test</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="http://responsiveslides.com/responsiveslides.css?v=1.13" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://responsiveslides.com/responsiveslides.min.js?v=1.6"></script>
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="rslides_container">
+        <i class="fas fa-heart heart" id="heart"></i>
+        <ul id="slides1" class="rslides">
+          <li>
+            <img src="https://imgar.zonapropcdn.com/avisos/resize/1/00/44/31/06/70/1200x1200/1688478693.jpg" alt="image 1" />
+          </li>
+          <li>
+            <img src="https://imgar.zonapropcdn.com/avisos/resize/1/00/44/31/06/70/1200x1200/1688478696.jpg" alt="image 2" />
+          </li>
+          <li>
+            <img src="https://imgar.zonapropcdn.com/avisos/resize/1/00/44/31/06/70/1200x1200/1688478698.jpg" alt="image 3" />
+          </li>
+        </ul>
+        <p class="extras-mobile">
+          380 m2 3 Dormitorios 2 Baños 2 Cocheras
+        </p>
+      </div>
+      <div class="content">
+        <div class="info">
+          <h3>Si vas a utilizar un pasaje de Lorem Ipsum, necesitás estar seguro</h3>
+          <p class="adress">
+            <i class="fas fa-map-marker-alt"></i>
+            Juan Francisco Seguí 3900, Palermo Chico, Palermo
+          </p>
+          <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta)</p>
+          <h2 style="margin-top: 32px;">
+            U$S  <span id="price-label"></span>
+            <input type="number" name="price" id="price-input" style="display: none;">
+            <span class="precio-metro">
+              $/m<span id="precio-metro"></span>
+            </span>
+          </h2>
+        </div>
+        <div class="footer">
+          <div>
+            <p class="extras-desktop">
+              380 m2 3 Dormitorios 2 Baños 2 Cocheras
+            </p>
+          </div>
+          <button class="cta" id="contactar">
+            CONTACTAR
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="overlay">
+      <div class="modal">
+        <h3>Para ser contactado por favor ingrese su direccion de correo electronico.</h3>
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" >
+        <p id="validation-error"></p>
+        <div class="modal-actions">
+          <button class="cta" id="enviar">
+            ENVIAR
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

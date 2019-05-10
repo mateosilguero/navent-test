@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  height: -webkit-fill-available !important;
+}
+
+body {
+  color: #333;
+  font: 14px/24px sans-serif;
+  margin: 0 auto;  
+  _width: 700px;
+  padding: 0 30px;
+  -webkit-font-smoothing: antialiased;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+#wrapper {
+  display: flex;
+  margin-top: 32px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  max-width: 875px;
+  min-width: 320px;
+}
+
+h1 {
+  font: 600 28px/36px sans-serif;
+  margin: 50px 0;
+}
+
+h3 {
+  font: 600 18px/24px sans-serif;
+  color: #64b5f6;
+  margin: 0 0 4px;
+}
+
+a {
+  color: #222;
+}
+
+.rslides {
+  margin: 0 auto;
+  max-height: 300px;
+}
+
+.rslides_container {
+  margin: auto;
+  position: relative;
+  float: left;
+  width: 100%;
+}
+
+.rslides1_nav {
+  position: absolute;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  top: 50%;
+  left: 0;
+  z-index: 99;
+  opacity: 0.7;
+  text-indent: -9999px;
+  overflow: hidden;
+  text-decoration: none;
+  height: 61px;
+  width: 38px;
+  background: transparent url("http://responsiveslides.com/with-captions/themes.gif") no-repeat left top;
+  margin-top: -45px;
+}
+
+.rslides1_nav:active {
+  opacity: 1.0;
+}
+
+.rslides1_nav.next {
+  left: auto;
+  background-position: right top;
+  right: 0;
+}
+
+.rslides2_nav {
+  position: absolute;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  top: 0;
+  left: 0;
+  display: block;
+  background: #fff; /* Fix for IE6-9 */
+  opacity: 0;
+  filter: alpha(opacity=1);
+  width: 48%;
+  text-indent: -9999px;
+  overflow: hidden;
+  height: 91%;
+}
+
+.rslides2_nav.next {
+  left: auto;
+  right: 0;
+}
+
+.rslides3_nav {
+  position: absolute;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  opacity: 0.6;
+  text-indent: -9999px;
+  overflow: hidden;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background: #000 url("themes.gif") no-repeat left 50%;
+  width: 38px;
+}
+
+.rslides3_nav:active {
+  opacity: 1.0;
+}
+
+.rslides3_nav.next {
+  left: auto;
+  background-position: right 50%;
+  right: 0;
+}
+
+.rslides1_nav:focus,
+.rslides2_nav:focus,
+.rslides3_nav:focus {
+  outline: none;
+}
+
+.content {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  background: #ddd;
+}
+
+.adress {
+  color: #999;
+  font-size: 12px;
+}
+
+.info {
+  padding: 8px 16px;
+}
+
+.cta { 
+  color: #64b5f6;
+  background: transparent;
+  border: none;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 8px 16px;
+}
+
+.extras-mobile {
+  display: none;
+  position: absolute;
+  margin-top: -40px;
+  z-index: 999;
+  padding: 8px;
+  color: white;
+  background: rgba(0,0,0,0.5);
+  width: -webkit-fill-available;
+}
+
+.precio-metro {
+  color: #64b5f6;
+  font-size: 16px;
+  padding-left: 4px;
+}
+
+#overlay {
+  background: rgba(0,0,0,0.5);
+  position: fixed;
+  z-index: 999;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  justify-content: center;
+  align-content: center;
+  transition: display 4s;
+}
+
+.modal {
+  background: white;
+  border-radius: 2px;
+  padding: 16px;
+  margin: auto;
+}
+
+#price-input {
+  border: none;
+  font-size: 22px;
+  padding: 4px;
+  border-bottom: 2px solid #64b5f6;
+  margin-bottom: 8px;
+  font-weight: 600;
+  width: 150px;
+}
+
+#email {
+  width: -webkit-fill-available;
+  border: none;
+  font-size: 16px;
+  padding: 8px;
+  border-bottom: 2px solid #64b5f6;
+  margin-bottom: 8px;
+}
+
+#validation-error {
+  color: red;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.heart {
+  position: absolute;
+  z-index: 5;
+  font-size: 32px;
+  width: calc(100% - 32px);
+  text-align: end;
+  padding: 16px;
+}
+
+.fav {
+  color: red;
+}
+
+@media screen and (max-width: 414px) {
+  #wrapper {
+    flex-direction: column;
+  }
+
+  .footer {
+    background: white;
+  }
+
+  .extras-mobile {
+    display: block;
+  }
+
+  .extras-desktop {
+    display: none;
+  }
+}
